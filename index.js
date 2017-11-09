@@ -18,6 +18,9 @@ function appendDriver(name){
   newDrivers.push(name)
 return newDrivers
 }
-function prependDriver(name){
 
+function prependDriver(name){
+  let newDrivers = [...drivers]
+  newDrivers.unshift(name)
+  return newDrivers
 }
