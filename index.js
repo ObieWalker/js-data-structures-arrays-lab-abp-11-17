@@ -24,3 +24,14 @@ function prependDriver(name){
   newDrivers.unshift(name)
   return newDrivers
 }
+
+function removeLastDriver(){
+  let newDrivers = [...drivers]
+  newDrivers.pop()
+  return newDrivers
+}
+function removeFirstDriver(){
+  let newDrivers = [...drivers]
+  newDrivers.shift()
+  return newDrivers  
+}
